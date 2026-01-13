@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja de Roupas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="carregarTotal()">
+    <header>
+      <h1>Loja de Roupas</h1>
+    </header>
+    <main class="produtos">
+      <div class="produto">
+        <h2>Camisa</h2>
+        <p>Preço: R$ 29,90</p>
+        <button onclick="adicionar('29,90')">Comprar</button>
+      </div>
+
+      <div class="produto">
+        <h2>Calça</h2>
+        <p>Preço: R$ 49,90</p>
+        <button onclick="adicionar('49,90')">Comprar</button>
+      </div>
+
+      <div class="produto">
+        <h2>Blusa</h2>
+        <p>Preço: R$ 39,90</p>
+        <button onclick="adicionar('39,90')">Comprar</button>
+      </div>
+
+      <div class="produto">
+        <h2>Jaqueta</h2>
+        <p>Preço: R$ 59,90</p>
+        <button onclick="adicionar('59,90')">Comprar</button>
+      </div>
+
+      <div class="produto">
+        <h2>Meia</h2>
+        <p>Preço: R$ 19,90</p>
+        <button onclick="adicionar('19,90')">Comprar</button>
+      </div>
+
+      <h2>Total: R$ <span id="total">0</span></h2>
+      <button class="limpar" onclick="limparCarrinho()">Limpar Carrinho</button>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
